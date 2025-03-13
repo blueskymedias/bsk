@@ -1,0 +1,104 @@
+2025-03-13 00:12:02,388 - INFO - Starting Flask application...
+2025-03-13 00:12:02,389 - INFO - Initializing database tables...
+2025-03-13 00:12:02,509 - DEBUG - Database connection acquired
+2025-03-13 00:12:03,170 - INFO - Admin user ensured: id=1, email=admin@example.com
+2025-03-13 00:12:03,172 - INFO - Students sequence reset to match max id
+2025-03-13 00:12:03,730 - INFO - Database tables and sample data initialized successfully
+2025-03-13 00:12:03,778 - WARNING -  * Debugger is active!
+2025-03-13 00:12:03,792 - INFO -  * Debugger PIN: 880-246-226
+2025-03-13 00:12:13,409 - INFO - 127.0.0.1 - - [13/Mar/2025 00:12:13] "GET / HTTP/1.1" 200 -
+2025-03-13 00:12:14,435 - INFO - 127.0.0.1 - - [13/Mar/2025 00:12:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-13 00:12:57,622 - DEBUG - Database connection acquired
+2025-03-13 00:12:58,116 - DEBUG - Token generated: user_id=1, is_admin=True, is_exam_user=False
+2025-03-13 00:12:58,118 - INFO - Login successful: admin@example.com, is_admin: True
+2025-03-13 00:12:58,119 - INFO - 127.0.0.1 - - [13/Mar/2025 00:12:58] "POST /login HTTP/1.1" 200 -
+2025-03-13 00:12:58,128 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:12:58,235 - DEBUG - Database connection acquired
+2025-03-13 00:12:58,244 - INFO - 127.0.0.1 - - [13/Mar/2025 00:12:58] "GET /categories HTTP/1.1" 200 -
+2025-03-13 00:12:58,565 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:12:58,670 - DEBUG - Database connection acquired
+2025-03-13 00:12:58,687 - INFO - 127.0.0.1 - - [13/Mar/2025 00:12:58] "GET /attendance HTTP/1.1" 200 -
+2025-03-13 00:13:07,787 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:13:07,884 - DEBUG - Database connection acquired
+2025-03-13 00:13:07,892 - INFO - 127.0.0.1 - - [13/Mar/2025 00:13:07] "GET /admin/users HTTP/1.1" 200 -
+2025-03-13 00:13:08,051 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:13:08,141 - DEBUG - Database connection acquired
+2025-03-13 00:13:08,158 - INFO - 127.0.0.1 - - [13/Mar/2025 00:13:08] "GET /admin/exam_users HTTP/1.1" 200 -
+2025-03-13 00:13:08,205 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:13:08,295 - DEBUG - Database connection acquired
+2025-03-13 00:13:08,308 - INFO - 127.0.0.1 - - [13/Mar/2025 00:13:08] "GET /admin/exam_results HTTP/1.1" 200 -
+2025-03-13 00:13:08,482 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:13:08,583 - DEBUG - Database connection acquired
+2025-03-13 00:13:08,595 - INFO - 127.0.0.1 - - [13/Mar/2025 00:13:08] "GET /attendance/admin HTTP/1.1" 200 -
+2025-03-13 00:13:08,621 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:13:08,722 - DEBUG - Database connection acquired
+2025-03-13 00:13:08,738 - INFO - 127.0.0.1 - - [13/Mar/2025 00:13:08] "GET /attendance HTTP/1.1" 200 -
+2025-03-13 00:13:50,832 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:13:51,417 - DEBUG - Database connection acquired
+2025-03-13 00:13:51,441 - INFO - Exam user created: exam_user_id=EXAM_1741805030513_561, username=teja, email=praveenstar977@gmail.com, user_id=1
+2025-03-13 00:13:51,443 - INFO - 127.0.0.1 - - [13/Mar/2025 00:13:51] "[35m[1mPOST /admin/create_exam_user HTTP/1.1[0m" 201 -
+2025-03-13 00:13:51,456 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:13:51,568 - DEBUG - Database connection acquired
+2025-03-13 00:13:51,577 - INFO - 127.0.0.1 - - [13/Mar/2025 00:13:51] "GET /admin/users HTTP/1.1" 200 -
+2025-03-13 00:13:51,888 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:13:52,027 - DEBUG - Database connection acquired
+2025-03-13 00:13:52,041 - INFO - 127.0.0.1 - - [13/Mar/2025 00:13:52] "GET /admin/exam_users HTTP/1.1" 200 -
+2025-03-13 00:13:52,156 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:13:52,246 - DEBUG - Database connection acquired
+2025-03-13 00:13:52,251 - INFO - 127.0.0.1 - - [13/Mar/2025 00:13:52] "GET /admin/exam_results HTTP/1.1" 200 -
+2025-03-13 00:13:52,388 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:13:52,478 - DEBUG - Database connection acquired
+2025-03-13 00:13:52,489 - INFO - 127.0.0.1 - - [13/Mar/2025 00:13:52] "GET /attendance/admin HTTP/1.1" 200 -
+2025-03-13 00:13:52,573 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:13:52,667 - DEBUG - Database connection acquired
+2025-03-13 00:13:52,677 - INFO - 127.0.0.1 - - [13/Mar/2025 00:13:52] "GET /attendance HTTP/1.1" 200 -
+2025-03-13 00:14:08,968 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:14:09,070 - DEBUG - Database connection acquired
+2025-03-13 00:14:09,080 - INFO - 127.0.0.1 - - [13/Mar/2025 00:14:09] "GET /categories HTTP/1.1" 200 -
+2025-03-13 00:14:09,216 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891378}
+2025-03-13 00:14:09,310 - DEBUG - Database connection acquired
+2025-03-13 00:14:09,321 - INFO - 127.0.0.1 - - [13/Mar/2025 00:14:09] "GET /attendance HTTP/1.1" 200 -
+2025-03-13 00:14:11,785 - INFO - 127.0.0.1 - - [13/Mar/2025 00:14:11] "GET / HTTP/1.1" 200 -
+2025-03-13 00:14:22,713 - DEBUG - Database connection acquired
+2025-03-13 00:14:23,204 - DEBUG - Token generated: user_id=1, is_admin=False, is_exam_user=True
+2025-03-13 00:14:23,220 - INFO - Exam login successful: exam_user_id=EXAM_1741805030513_561
+2025-03-13 00:14:23,223 - INFO - 127.0.0.1 - - [13/Mar/2025 00:14:23] "POST /exam/login HTTP/1.1" 200 -
+2025-03-13 00:14:23,238 - DEBUG - Token verified: {'user_id': 1, 'email': 'praveenstar977@gmail.com', 'is_admin': False, 'is_exam_user': True, 'exp': 1741806263}
+2025-03-13 00:14:23,447 - DEBUG - Database connection acquired
+2025-03-13 00:14:23,459 - INFO - 127.0.0.1 - - [13/Mar/2025 00:14:23] "GET /exam/questions HTTP/1.1" 200 -
+2025-03-13 00:15:35,345 - DEBUG - Token verified: {'user_id': 1, 'email': 'praveenstar977@gmail.com', 'is_admin': False, 'is_exam_user': True, 'exp': 1741806263}
+2025-03-13 00:15:35,445 - DEBUG - Database connection acquired
+2025-03-13 00:15:35,486 - INFO - Exam submitted: user_id=1, score=6
+2025-03-13 00:15:35,488 - INFO - 127.0.0.1 - - [13/Mar/2025 00:15:35] "POST /exam/submit HTTP/1.1" 200 -
+2025-03-13 00:15:38,826 - INFO - 127.0.0.1 - - [13/Mar/2025 00:15:38] "GET / HTTP/1.1" 200 -
+2025-03-13 00:16:25,092 - DEBUG - Database connection acquired
+2025-03-13 00:16:25,579 - DEBUG - Token generated: user_id=1, is_admin=True, is_exam_user=False
+2025-03-13 00:16:25,579 - INFO - Login successful: admin@example.com, is_admin: True
+2025-03-13 00:16:25,580 - INFO - 127.0.0.1 - - [13/Mar/2025 00:16:25] "POST /login HTTP/1.1" 200 -
+2025-03-13 00:16:25,590 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891585}
+2025-03-13 00:16:25,698 - DEBUG - Database connection acquired
+2025-03-13 00:16:25,707 - INFO - 127.0.0.1 - - [13/Mar/2025 00:16:25] "GET /categories HTTP/1.1" 200 -
+2025-03-13 00:16:26,022 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891585}
+2025-03-13 00:16:26,115 - DEBUG - Database connection acquired
+2025-03-13 00:16:26,126 - INFO - 127.0.0.1 - - [13/Mar/2025 00:16:26] "GET /attendance HTTP/1.1" 200 -
+2025-03-13 00:16:30,278 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891585}
+2025-03-13 00:16:30,381 - DEBUG - Database connection acquired
+2025-03-13 00:16:30,392 - INFO - 127.0.0.1 - - [13/Mar/2025 00:16:30] "GET /admin/users HTTP/1.1" 200 -
+2025-03-13 00:16:30,540 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891585}
+2025-03-13 00:16:30,634 - DEBUG - Database connection acquired
+2025-03-13 00:16:30,645 - INFO - 127.0.0.1 - - [13/Mar/2025 00:16:30] "GET /admin/exam_users HTTP/1.1" 200 -
+2025-03-13 00:16:30,712 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891585}
+2025-03-13 00:16:30,898 - DEBUG - Database connection acquired
+2025-03-13 00:16:30,906 - INFO - 127.0.0.1 - - [13/Mar/2025 00:16:30] "GET /admin/exam_results HTTP/1.1" 200 -
+2025-03-13 00:16:30,963 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891585}
+2025-03-13 00:16:31,052 - DEBUG - Database connection acquired
+2025-03-13 00:16:31,063 - INFO - 127.0.0.1 - - [13/Mar/2025 00:16:31] "GET /attendance/admin HTTP/1.1" 200 -
+2025-03-13 00:16:31,229 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891585}
+2025-03-13 00:16:31,321 - DEBUG - Database connection acquired
+2025-03-13 00:16:31,332 - INFO - 127.0.0.1 - - [13/Mar/2025 00:16:31] "GET /attendance HTTP/1.1" 200 -
+2025-03-13 00:18:02,482 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891585}
+2025-03-13 00:18:02,585 - DEBUG - Database connection acquired
+2025-03-13 00:18:02,596 - INFO - 127.0.0.1 - - [13/Mar/2025 00:18:02] "GET /categories HTTP/1.1" 200 -
+2025-03-13 00:18:02,745 - DEBUG - Token verified: {'user_id': 1, 'email': 'admin@example.com', 'is_admin': True, 'is_exam_user': False, 'exp': 1741891585}
+2025-03-13 00:18:02,835 - DEBUG - Database connection acquired
+2025-03-13 00:18:02,847 - INFO - 127.0.0.1 - - [13/Mar/2025 00:18:02] "GET /attendance HTTP/1.1" 200 -
